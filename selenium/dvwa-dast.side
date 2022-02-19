@@ -1,0 +1,288 @@
+{
+  "id": "10a98388-6fa2-4150-86de-7875931dc362",
+  "version": "2.0",
+  "name": "dvwa-dast",
+  "url": "https://tgtprac.managedbyparabellyx.com",
+  "tests": [{
+    "id": "52851b9d-e389-49b5-a50b-00a92c6145e7",
+    "name": "test1",
+    "commands": [{
+      "id": "36e3cdb9-c0d3-4e9f-9294-c481e5ecc20d",
+      "comment": "",
+      "command": "open",
+      "target": "/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82dbdcbd-faba-4338-bae1-6389bb53116e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "956x579",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f082dd41-2720-44c3-a4ea-f24adf126c39",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.loginInput:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72c07908-23aa-48ac-9df7-14063f5abd45",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.loginInput:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "37ccbeb5-0c51-44ad-800b-a62690a5e0b4",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.loginInput:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/fieldset/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "869745ae-f7a7-40b7-9c9c-288ccd03716a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.loginInput:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/fieldset/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7cf933dd-2413-4fcf-a675-760b0f463689",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Instructions",
+      "targets": [
+        ["linkText=Instructions", "linkText"],
+        ["css=.menuBlocks:nth-child(1) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Instructions')]", "xpath:link"],
+        ["xpath=//div[@id='main_menu_padded']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'instructions.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Instructions')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34746395-a6c7-4b51-81af-9487c910d608",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menuBlocks:nth-child(1) > li:nth-child(3)",
+      "targets": [
+        ["css=.menuBlocks:nth-child(1) > li:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='main_menu_padded']/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Setup / Reset DB')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "684b29f9-930a-4dfa-9042-1be2bb707cd8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Setup / Reset DB",
+      "targets": [
+        ["linkText=Setup / Reset DB", "linkText"],
+        ["css=.menuBlocks:nth-child(1) > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Setup / Reset DB')]", "xpath:link"],
+        ["xpath=//div[@id='main_menu_padded']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'setup.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Setup / Reset DB')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "60ddb733-9a9e-4661-97ca-83787f738c7b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=DVWA Security",
+      "targets": [
+        ["linkText=DVWA Security", "linkText"],
+        ["css=.menuBlocks:nth-child(3) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'DVWA Security')]", "xpath:link"],
+        ["xpath=//div[@id='main_menu_padded']/ul[3]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'security.php')]", "xpath:href"],
+        ["xpath=//ul[3]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'DVWA Security')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7c0881c-54bc-4182-9f56-1504f8d0686a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=SQL Injection",
+      "targets": [
+        ["linkText=SQL Injection", "linkText"],
+        ["css=li:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'SQL Injection')]", "xpath:link"],
+        ["xpath=//div[@id='main_menu_padded']/ul[2]/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'vulnerabilities/sqli/')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'SQL Injection')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcbdfad8-6932-4e00-9280-85b11dcc3018",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(8)",
+      "targets": [
+        ["css=li:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='main_menu_padded']/ul[2]/li[8]", "xpath:idRelative"],
+        ["xpath=//li[8]", "xpath:position"],
+        ["xpath=//li[contains(.,'SQL Injection (Blind)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1381f64-d9cd-4109-8a43-fccb79a8063e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=SQL Injection (Blind)",
+      "targets": [
+        ["linkText=SQL Injection (Blind)", "linkText"],
+        ["css=li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'SQL Injection (Blind)')]", "xpath:link"],
+        ["xpath=//div[@id='main_menu_padded']/ul[2]/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../../vulnerabilities/sqli_blind/')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'SQL Injection (Blind)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42498b6e-c95a-4503-8cac-8feae0cee0f3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Brute Force",
+      "targets": [
+        ["linkText=Brute Force", "linkText"],
+        ["css=.menuBlocks:nth-child(2) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Brute Force')]", "xpath:link"],
+        ["xpath=//div[@id='main_menu_padded']/ul[2]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../../vulnerabilities/brute/')]", "xpath:href"],
+        ["xpath=//ul[2]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Brute Force')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c7fd7d1-0f5d-41f2-a6aa-7c175aa983cc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Command Injection",
+      "targets": [
+        ["linkText=Command Injection", "linkText"],
+        ["css=.menuBlocks:nth-child(2) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Command Injection')]", "xpath:link"],
+        ["xpath=//div[@id='main_menu_padded']/ul[2]/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../../vulnerabilities/exec/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Command Injection')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15fe62f5-63ec-4763-9684-2b9fc6017578",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menuBlocks:nth-child(2) > li:nth-child(3)",
+      "targets": [
+        ["css=.menuBlocks:nth-child(2) > li:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='main_menu_padded']/ul[2]/li[3]", "xpath:idRelative"],
+        ["xpath=//ul[2]/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'CSRF')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28f5438f-313a-4009-a1d9-befa88ec7fdb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CSRF",
+      "targets": [
+        ["linkText=CSRF", "linkText"],
+        ["css=.menuBlocks:nth-child(2) > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CSRF')]", "xpath:link"],
+        ["xpath=//div[@id='main_menu_padded']/ul[2]/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../../vulnerabilities/csrf/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CSRF')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88d662f6-e9a4-4a2e-a4d7-37aae1e3957d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=File Inclusion",
+      "targets": [
+        ["linkText=File Inclusion", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'File Inclusion')]", "xpath:link"],
+        ["xpath=//div[@id='main_menu_padded']/ul[2]/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../../vulnerabilities/fi/.?page=include.php')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'File Inclusion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44f92cb9-1bd3-40fa-b03c-6c5923756aa2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Insecure CAPTCHA",
+      "targets": [
+        ["linkText=Insecure CAPTCHA", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Insecure CAPTCHA')]", "xpath:link"],
+        ["xpath=//div[@id='main_menu_padded']/ul[2]/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../../vulnerabilities/captcha/')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Insecure CAPTCHA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24c4718c-a3a4-405f-9567-cea1dfa6838e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=XSS (Reflected)",
+      "targets": [
+        ["linkText=XSS (Reflected)", "linkText"],
+        ["css=li:nth-child(11) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'XSS (Reflected)')]", "xpath:link"],
+        ["xpath=//div[@id='main_menu_padded']/ul[2]/li[11]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../../vulnerabilities/xss_r/')]", "xpath:href"],
+        ["xpath=//li[11]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'XSS (Reflected)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bd9392ac-43d0-4991-a50f-7b9a46631a49",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["52851b9d-e389-49b5-a50b-00a92c6145e7"]
+  }],
+  "urls": ["https://tgtprac.managedbyparabellyx.com/"],
+  "plugins": []
+}
