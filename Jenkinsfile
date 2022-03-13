@@ -19,7 +19,7 @@ pipeline {
                 echo 'Starting Zap'
                 sh '/opt/zap/zap.sh -port 9191 -daemon -config api.key=$ZAP_KEY > zap.logs &'
                 sh """
-                    while ! nc -z localhost 9191; do   
+                    while ! curl http://localhost:9191; do   
                         sleep 1 
                     done
                 """
@@ -41,8 +41,8 @@ pipeline {
                     // Below are the lines that can help remove credentials from the side file
                     // sh 'sed -i "s/##password##/${UAT_PASSWORD}/g" selenium/dvwa-dast.side'
                     // sh 'sed -i "s/##user##/${UAT_USER}/g" selenium/dvwa-dast.side'
-                    sh 'selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[headless] acceptInsecureCerts=true" --proxy-type=manual --proxy-options="http=localhost:9191 https=localhost:9191" dvwa-dast.side'
-                    sh 'sleep 15'
+                    // sh 'selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[headless] acceptInsecureCerts=true" --proxy-type=manual --proxy-options="http=localhost:9191 https=localhost:9191" dvwa-dast.side'
+                    // sh 'sleep 15'
                 }
             }
         }
