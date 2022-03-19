@@ -19,7 +19,7 @@ pipeline {
                 echo 'Starting Zap'
                 sh '/opt/zap/zap.sh -port 9191 -daemon -config api.key=$ZAP_KEY > zap.logs &'
                 sh """
-                    while ! curl http://localhost:9191; do   
+                    while ! curl -fsSL http://localhost:9191; do   
                         sleep 1 
                     done
                 """
