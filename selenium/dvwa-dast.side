@@ -2,7 +2,7 @@
   "id": "10a98388-6fa2-4150-86de-7875931dc362",
   "version": "2.0",
   "name": "dvwa-dast",
-  "url": "https://tgtprac.managedbyparabellyx.com",
+  "url": "http://tgtprac.dairlab.tk/",
   "tests": [{
     "id": "52851b9d-e389-49b5-a50b-00a92c6145e7",
     "name": "test1",

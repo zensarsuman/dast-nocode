@@ -9,8 +9,8 @@ pipeline {
         ZAP_KEY             =       credentials('ZAP_KEY')
         UAT_USER            =       credentials('UAT_USER')
         UAT_PASSWORD        =       credentials('UAT_PASSWORD')
-        TARGET_URL          =       "https://tgtprac.managedbyparabellyx.com/"
-        INCLUDEINCONTEXT    =       "https://tgtprac.managedbyparabellyx.com.*"
+        TARGET_URL          =       "http://tgtprac.dairlab.tk/"
+        INCLUDEINCONTEXT    =       "http://tgtprac.dairlab.tk.*"
     }
 
     stages{
