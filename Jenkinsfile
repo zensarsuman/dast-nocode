@@ -2,15 +2,15 @@ pipeline {
     agent any
 
     tools {
-        maven 'maven 3.6.3'
+        maven 'maven 3.9.5'
     }
 
     environment {
         ZAP_KEY             =       credentials('ZAP_KEY')
         UAT_USER            =       credentials('UAT_USER')
         UAT_PASSWORD        =       credentials('UAT_PASSWORD')
-        TARGET_URL          =       "http://tgtprac.dairlab.tk/"
-        INCLUDEINCONTEXT    =       "http://tgtprac.dairlab.tk.*"
+        TARGET_URL          =       "http://testphp.vulnweb.com/"
+        INCLUDEINCONTEXT    =       "http://testphp.vulnweb.com/"
     }
 
     stages{
